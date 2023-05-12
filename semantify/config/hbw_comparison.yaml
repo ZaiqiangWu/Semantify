@@ -1,0 +1,28 @@
+data_dir: /home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/HBW_DATA/data/images
+predictions_dir: /home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/HBW_DATA/predictions
+output_dir: /home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/HBW_DATA/comparison_latest
+gt_dir: /home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/HBW_DATA/Ground_Truth
+
+comparison_kwargs:
+  
+  raw_imgs_dir: ${data_dir}
+  gt_dir: ${gt_dir}
+  output_path: ${output_dir}
+  
+  comparison_dirs:
+    shapy: ${predictions_dir}/shapy_predictions
+    # spin: ${predictions_dir}/spin_predictions
+    pixie: ${predictions_dir}/pixie_predictions
+  
+  smplx_models: 
+    male: /home/nadav2/dev/repos/Thesis/end2end_pipeline/smplx/smplx_male.ckpt
+    female: /home/nadav2/dev/repos/Thesis/end2end_pipeline/smplx/smplx_female.ckpt
+    neutral: /home/nadav2/dev/repos/Thesis/end2end_pipeline/smplx/smplx_neutral.ckpt
+
+  renderer_kwargs:
+      img_size: [1024, 1024]
+      dist: 4.2
+      elev: 10.0
+      azim: 0.0
+      texture_optimization: True
+

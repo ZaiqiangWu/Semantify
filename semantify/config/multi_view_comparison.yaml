@@ -1,0 +1,8 @@
+defaults:
+  - renderer_kwargs: smplx
+
+results_dir: /home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/smplx_shape/shapy_cherry_pick/comparison_new_net
+
+renderer_kwargs:
+  img_size: [1024, 1024]
+  tex_path:

@@ -1,0 +1,21 @@
+data_dir: /home/nadav2/dev/data/CLIP2Shape/GT_data/people_snapshot_public
+output_path: /home/nadav2/dev/data/CLIP2Shape/GT_data/our_predictions
+model_type: smplx
+with_face: False
+display: True
+create_vid: True
+
+smplx_models_paths:
+  smplx_male: /home/nadav2/dev/repos/Thesis/production/smplx_male.ckpt
+  smplx_female: /home/nadav2/dev/repos/Thesis/production/smplx_female.ckpt
+
+labels_weights:
+  male: [1.0, 0.8, 1.0, 1.2, 0.8]
+  female:
+
+renderer_kwargs:
+    img_size: [450, 300]
+    tex_path:
+    dist: 2.4
+    elev: 8.6
+    azim: 2.1

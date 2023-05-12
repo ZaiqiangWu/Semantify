@@ -1,0 +1,44 @@
+defaults:
+  - renderer_kwargs: smplx
+  # - sliders_limiters: smplx
+
+# where to save the output
+out_dir: /home/nadav2/dev/data/CLIP2Shape/outs/figures/extra_shapes
+
+image_path: # if you want to fit the model to an image, set the image path here
+image2shape: False  # if True, then the image_path should be set, and the model will be fitted to the image
+A_pose: True  # should the model be in A pose, if False, then T pose
+show_values: False
+
+
+### CHOOSE ONE OF THE FOLLOWING:
+# Body Shape
+model_type: smpl  # smplx / smpl
+gender: male  # male / female / neutral
+model_path: ${get_model_abs_path:${model_type}, ${gender}}
+
+# # Face Shape / Expression 
+# model_type: flame
+# specific: expression  # expression / shape
+# model_path: ${get_model_abs_path:${model_type}, ${specific}}
+
+# # Animal Shape
+# model_type: smal
+# specific:
+# model_path: ${get_model_abs_path:${model_type}, ${specific}}
+
+# GENERIC
+# with_face: false
+# on_parameters: True
+# num_coeffs: 10
+
+# COMPARISONS
+hbw_gt: #/home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/HBW_DATA/Ground_Truth/012.npy
+comparison_mode: False  # if True, then the h
+
+renderer_kwargs:
+  img_size: [1024, 1024]
+  use_tex: False
+  model_type: ${model_type}
+  texture_optimization: True
+  py3d: True

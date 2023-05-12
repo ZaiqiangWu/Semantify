@@ -1,0 +1,20 @@
+defaults:
+    - renderer_kwargs: flame_shape
+
+out_path: /home/nadav2/dev/data/CLIP2Shape/outs/descriptors_ablations/correct_threshold/flame_shape
+model_path: /home/nadav2/dev/repos/Thesis/end2end_pipeline/flame/shape/flame_shape_e2e.ckpt
+min_value: 10.0
+max_value: 40.0
+effect_threshold: 0.3
+color_map: YlOrRd
+gender: neutral
+method: L2
+raw_3dmm: False
+
+optimize_feature: shape_params
+model_type: flame
+
+renderer_kwargs:
+    img_size: [1024, 1024]
+    texture_optimization: True
+    model_type: ${model_type}

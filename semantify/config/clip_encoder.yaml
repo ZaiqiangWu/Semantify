@@ -1,0 +1,6 @@
+defaults:
+  - descriptors: smplx_male
+
+device: cuda
+multiview: True
+imgs_dir: /home/nadav2/dev/data/CLIP2Shape/images/smplx_male_multiview_3k_uniform

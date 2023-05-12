@@ -1,0 +1,32 @@
+out_dir: /home/nadav2/dev/data/CLIP2Shape/outs/depth_maps/flame
+model_type: flame
+gender: male
+parameter: betas
+iou_threshold: 0.0
+get_rgb: True
+
+
+renderer_kwargs:
+    img_size: [512, 512]
+    tex_path: /home/nadav2/dev/repos/Thesis/Flame/flame2020/mesh.png
+    texture_optimization: False
+
+    # # SMPLX cam params
+    # dist: 2.4
+    # elev: 8.6
+    # azim: 2.1
+
+    # FLAME shape cam params
+    dist: 0.8
+    elev: 0.0
+    azim: 0.0
+
+    # # FLAME expression cam params
+    # dist: 0.5
+    # elev: 0.0
+    # azim: 0.0
+
+    # SMAL cam params
+    # dist: 3.8
+    # elev: 20.0
+    # azim: 0.0

@@ -1,0 +1,26 @@
+defaults:
+  - renderer_kwargs: flame_expression
+  - train_kwargs: train
+
+model_type: flame
+gender: neutral
+method: L2
+mode: run
+optimize_features: expression_params
+data_path: /home/nadav2/dev/data/CLIP2Shape/images/flame_expression_wo_jaw
+descriptors_clusters_json: /home/nadav2/dev/data/CLIP2Shape/outs/clustering_images/words_jsons/flame_expression_wo_jaw.json
+batch_size: 200
+effect_threshold: 0.3
+
+output_path: /home/nadav2/dev/data/CLIP2Shape/outs/descriptors_ablations/correct_threshold/${model_type}_${gender}
+descriptors_options:
+  - 2
+  - 5
+  - 10
+  - 15
+  - 20
+
+renderer_kwargs:
+    img_size: [1024, 1024]
+    texture_optimization: True
+    model_type: ${model_type}

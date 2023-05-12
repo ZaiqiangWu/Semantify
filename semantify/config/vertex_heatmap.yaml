@@ -1,0 +1,19 @@
+defaults:
+  - renderer_kwargs: smplx
+
+descriptors_dir: /home/nadav2/dev/data/CLIP2Shape/outs/vertices_heatmap/optimizations/compared_to_inv/smplx_singleview_diff_coords
+corr_threshold: 0.5
+model_type: smplx
+gender: male
+iou_threshold: 0.3
+optimize_feature: betas
+color_map: YlOrRd
+effect_threshold: 0.5
+method: diff_coords
+compare_to_default_mesh: True
+
+
+renderer_kwargs:
+    img_size: [1024, 1024]
+    tex_path:
+    texture_optimization: True

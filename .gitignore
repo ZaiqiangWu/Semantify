@@ -1,0 +1,11 @@
+# Jupyter Notebook
+.ipynb_checkpoints
+
+*.ckpt
+
+semantify/outputs/**
+semantify/runs/**
+
+**pycache**
+
+**pyc

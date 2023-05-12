@@ -1,0 +1,139 @@
+defaults:
+  - renderer_kwargs: smplx
+  - descriptors: smplx_male
+
+
+# # FLAME - Shape
+# texture: #${repo_path}/Flame/flame2020/mesh.png
+# model_type: flame
+# device: cuda
+# gender: neutral
+# text: 
+#   - "thin"
+#   - "big forhead"
+#   - "big eyes"
+#   - "big nose"
+#   - "big mouth"
+#   - "ears sticking-out"
+#   - "big eyebrows"
+#   - "thin lips"
+#   - "small chin"
+#   - "long neck"
+#   - "fat"
+#   - "chubby cheeks"
+#   - "long head"
+# total_steps: 50
+# optimize_features: shape_params
+# output_dir: ${main_output_dir}
+# dist: 0.8
+# elev: 0.0
+# azim: 0.0
+# lr: 0.1
+# # display: False
+
+# # FLAME - Expression
+# texture: #${repo_path}/Flame/flame2020/mesh.png
+# model_type: flame
+# device: cuda
+# gender: neutral
+# text: 
+# - "happy"
+# - "sad"
+# - "angry"
+# - "surprised"
+# - "disgusted"
+# - "fearful"
+# - "neutral"
+# - "smiling"
+# - "serious"
+# - "pensive"
+# - "confused"
+# - "bored"
+# - "sleepy"
+# - "tired"
+# - "excited"
+# - "relaxed"
+# - "calm"
+# - "nervous"
+# - "worried"
+# - "scared"
+# - "open mouth"
+# - "raised eyebrows"
+# - "open eyes"
+# total_steps: 50
+# optimize_features: expression_params
+# output_dir: ${main_output_dir}
+# dist: 0.5
+# elev: 0.0
+# azim: 0.0
+# lr: 0.1
+# display: False
+
+# SMPLX - male
+model_type: smplx
+gender: male
+device: cuda
+total_steps: 100
+fps: 10
+num_coeffs: 10
+optimize_features: betas
+output_dir: /home/nadav2/dev/data/CLIP2Shape/outs/vertices_heatmap/optimizations/compared_to_inv/smplx_multiview_diff_coords
+lr: 0.2
+display: True
+renderer_kwargs:
+  tex_path: /home/nadav2/dev/repos/CLIP2Shape/SMPLX/textures/smplx_texture_m_alb.png
+  dist: 5.0
+  img_size: [896, 896]
+
+
+# # SMPLX - female
+# texture: ${repo_path}/SMPLX/textures/smplx_texture_m_alb.png
+# model_type: smplx
+# gender: female
+# device: cuda
+# text: 
+#   - "fat"
+#   - "thin"
+#   - "hourglass"
+#   - "short"
+#   - "long legs"
+#   - "narrow waist"
+#   - "skinny"
+#   - "tall"
+#   - "broad shoulders"
+#   - "pear shaped"
+#   - "average"
+#   - "big"
+#   - "curvy"
+#   - "lean"
+#   - "proportioned"
+#   - "sexy"
+#   - "fit"
+#   - "heavyset"
+#   - "petite"
+#   - "small"
+
+# total_steps: 100
+# num_coeffs: 10
+# optimize_features: betas
+# output_dir: /home/nadav2/dev/data/CLIP2Shape/outs/vertices_heatmap/optimizations/compared_to_inv/smplx_multiview_diff_coords
+# lr: 0.3
+# display: True
+# renderer_kwargs:
+#   tex_path: /home/nadav2/dev/repos/CLIP2Shape/SMPLX/textures/smplx_texture_m_alb.png
+#   dist: 5.0
+#   img_size: [896, 896]
+
+
+# SMAL
+# texture:  # keep empty for random texture
+# model_type: smal
+# device: cuda
+# text: donkey
+# total_steps: 700
+# optimize_features: beta
+# output_dir: ${main_output_dir}
+# dist: 3.8
+# elev: 15.0
+# azim: 0.0
+# lr: 0.01

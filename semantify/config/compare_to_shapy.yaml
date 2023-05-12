@@ -1,0 +1,14 @@
+defaults:
+  - renderer_kwargs: smplx
+
+shapy_dir: /home/nadav2/dev/repos/shapy/samples/shapy_fit
+output_path: /home/nadav2/dev/data/CLIP2Shape/outs/images_to_shape/smplx_shape/shapy_cherry_pick/comparison_new_net
+display: True
+
+smplx_models_paths:
+  smplx_male: /home/nadav2/dev/repos/Thesis/pre_production/smplx_male_5_descriptors.ckpt
+  smplx_female: /home/nadav2/dev/repos/Thesis/pre_production/smplx_female_10_descriptors.ckpt
+  
+renderer_kwargs:
+    img_size: [512, 512]
+    tex_path:

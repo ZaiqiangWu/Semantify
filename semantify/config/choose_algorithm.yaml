@@ -1,0 +1,10 @@
+output_dir: /home/nadav2/dev/data/CLIP2Shape/outs/choosing_descriptors
+images_dir: /home/nadav2/dev/data/CLIP2Shape/images/smplx_male_multiview_10K
+descriptors_clusters_json: /home/nadav2/dev/data/CLIP2Shape/outs/clustering_images/words_jsons/smplx_male_multiview_10K.json
+max_num_of_descriptors: 10
+min_num_of_descriptors: 1
+corr_threshold: 0.6
+verbose: True
+descriptors_to_keep:
+  # - muscular
+  # - long torso

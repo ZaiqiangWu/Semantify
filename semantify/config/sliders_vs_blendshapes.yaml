@@ -1,0 +1,25 @@
+defaults:
+    - renderer_kwargs: smplx
+
+bs_dir: /home/nadav2/dev/data/CLIP2Shape/outs/sliders_vs_blendshapes/images_to_fit/${model_type}/${gender}
+model_paths:
+    # - /home/nadav2/dev/repos/Thesis/pre_production/smplx_male_500.ckpt
+    - /home/nadav2/dev/repos/Thesis/pre_production/smplx_male_1k.ckpt
+    - /home/nadav2/dev/repos/Thesis/end2end_pipeline/smplx/smplx_male_e2e.ckpt
+    # - /home/nadav2/dev/repos/Thesis/pre_production/smplx_male_7k.ckpt
+    - /home/nadav2/dev/repos/Thesis/pre_production/smplx_male_10k.ckpt
+
+output_dir: /home/nadav2/dev/data/CLIP2Shape/outs/sliders_vs_blendshapes/smplx_male/data_amount_ablation
+gender: male
+num_coeffs: 10
+optimizing_feature: betas
+model_type: smplx
+display: False
+write_videos: False
+
+total_steps: 5000
+lr: 0.01
+
+renderer_kwargs:
+    img_size: [1024, 1024]
+    # tex_path: #/home/nadav2/dev/repos/Thesis/SMPLX/textures/smplx_texture_m_alb.png

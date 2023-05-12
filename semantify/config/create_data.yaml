@@ -1,0 +1,20 @@
+defaults:
+  - renderer_kwargs: smplx
+
+output_path: /home/nadav2/dev/data/CLIP2Shape/images/smplx_male_multiview_3k_uniform # Path to save the images
+gender: male
+img_tag:
+model_type: smplx
+with_face: false
+num_of_imgs: 3000
+num_coeffs: 10
+multiview: True
+get_tall_data: False
+
+renderer_kwargs:
+  py3d: True
+  img_size: [1024, 1024]
+  background_color: [0.0, 0.0, 0.0]
+  use_tex: True
+  model_type: ${model_type}
+

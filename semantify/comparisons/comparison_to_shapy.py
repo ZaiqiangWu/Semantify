@@ -11,7 +11,7 @@ from pathlib import Path
 from omegaconf import DictConfig
 from pytorch3d.io import save_obj
 from typing import Dict, Any, Tuple, List, Literal, Union
-from clip2mesh.utils import Utils, Pytorch3dRenderer
+from semantify.utils import Utils, Pytorch3dRenderer
 
 
 class CompareToShapy:

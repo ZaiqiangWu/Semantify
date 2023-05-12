@@ -10,7 +10,7 @@ from pathlib import Path
 from omegaconf import DictConfig
 from typing import Tuple, Literal, List
 from torchvision.transforms import Resize
-from clip2mesh.utils import ModelsFactory, Pytorch3dRenderer, Utils
+from semantify.utils import ModelsFactory, Pytorch3dRenderer, Utils
 
 
 class Model(nn.Module):

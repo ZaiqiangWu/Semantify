@@ -9,8 +9,8 @@ from torch.utils.data import DataLoader
 from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.utilities.seed import seed_everything
 from pytorch_lightning.loggers import TensorBoardLogger
-from clip2mesh.utils import C2M_pl, CreateModelMeta
-from clip2mesh.data_management.dataset import CLIP2MESHDataset
+from semantify.utils import C2M_pl, CreateModelMeta
+from semantify.data_management.dataset import semantifyDataset
 
 
 def train(config: DictConfig):
@@ -23,7 +23,7 @@ def train(config: DictConfig):
 
     log = logging.getLogger(__name__)
 
-    dataset = CLIP2MESHDataset(**config.dataset)
+    dataset = semantifyDataset(**config.dataset)
     train_size = int(len(dataset) * config.train_size)
     val_size = len(dataset) - train_size
     train_dataset, val_dataset = torch.utils.data.random_split(dataset, [train_size, val_size])

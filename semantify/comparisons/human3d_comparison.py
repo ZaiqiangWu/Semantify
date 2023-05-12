@@ -10,7 +10,7 @@ from pathlib import Path
 from omegaconf import DictConfig
 from pytorch3d.structures import Meshes
 from typing import Dict, Tuple, Literal, List
-from clip2mesh.comparisons.comparison_utils import ComparisonUtils
+from semantify.comparisons.comparison_utils import ComparisonUtils
 
 
 class Human3DComparison(ComparisonUtils):

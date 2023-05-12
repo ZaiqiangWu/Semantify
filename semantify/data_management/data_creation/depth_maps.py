@@ -5,7 +5,7 @@ from pathlib import Path
 from omegaconf import DictConfig
 from typing import Tuple, Union, Literal
 from pytorch3d.structures import Meshes
-from clip2mesh.utils import Utils, ModelsFactory, Pytorch3dRenderer, Open3dRenderer
+from semantify.utils import Utils, ModelsFactory, Pytorch3dRenderer, Open3dRenderer
 
 
 class DepthMaps:

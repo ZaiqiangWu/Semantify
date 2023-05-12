@@ -39,13 +39,14 @@ from pytorch3d.renderer import (
     BlendParams,
     Materials,
 )
-from clip2mesh.three_dmm.smal_layer import get_smal_layer
-from clip2mesh.three_dmm.flame import FLAME
+from semantify.three_dmm.smal_layer import get_smal_layer
+from semantify.three_dmm.flame import FLAME
 
 
 def get_root_dir():
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     return root_dir
+
 
 def append_to_root_dir(path: str) -> str:
     root_dir = get_root_dir()

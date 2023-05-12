@@ -3,9 +3,15 @@
 
 *.ckpt
 
+outputs/**
 semantify/outputs/**
 semantify/runs/**
 
 **pycache**
 
 **pyc
+
+SMAL/*
+SMPLX/*
+Flame/*
+SMPL/*

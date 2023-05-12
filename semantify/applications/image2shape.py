@@ -6,7 +6,7 @@ from PIL import Image
 from pathlib import Path
 from omegaconf import DictConfig, OmegaConf
 from typing import Dict, Tuple, Literal, Optional
-from clip2mesh.utils import Utils, Image2ShapeUtils, get_model_abs_path, get_model_feature_name
+from semantify.utils import Utils, Image2ShapeUtils, get_model_abs_path, get_model_feature_name
 
 OmegaConf.register_new_resolver("get_model_abs_path", get_model_abs_path)
 

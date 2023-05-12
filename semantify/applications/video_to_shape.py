@@ -13,8 +13,8 @@ from copy import deepcopy
 from omegaconf import DictConfig
 from pytorch3d.io import save_obj
 from typing import Union, Literal, Dict, Tuple, Any
-from clip2mesh.utils import Utils, Pytorch3dRenderer
-from clip2mesh.applications.image_to_shape import Image2Shape
+from semantify.utils import Utils, Pytorch3dRenderer
+from semantify.applications.image_to_shape import Image2Shape
 
 
 class Video2Shape(Image2Shape):

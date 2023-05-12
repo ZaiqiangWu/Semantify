@@ -374,4 +374,4 @@ dependencies:
     - yaspin==2.2.0
     - yellowbrick==1.5
     - zipp==3.8.1
-prefix: /home/nadav2/anaconda3/envs/clip2mesh
+prefix: /home/nadav2/anaconda3/envs/semantify

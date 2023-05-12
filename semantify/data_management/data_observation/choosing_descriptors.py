@@ -9,8 +9,8 @@ from nltk.corpus import wordnet
 from omegaconf import DictConfig
 from itertools import permutations
 from typing import Union, Dict, Any, Set, List
-from clip2mesh.utils import Utils
-from clip2mesh.choosing_descriptors_utils import ChoosingDescriptorsUtils
+from semantify.utils import Utils
+from semantify.choosing_descriptors_utils import ChoosingDescriptorsUtils
 
 
 class ChoosingDescriptors(ChoosingDescriptorsUtils):

@@ -9,7 +9,7 @@ from tqdm import tqdm
 from pathlib import Path
 from omegaconf import DictConfig
 from typing import Literal, Dict, Any, List
-from clip2mesh.utils import Utils, Pytorch3dRenderer
+from semantify.utils import Utils, Pytorch3dRenderer
 
 
 class Model(nn.Module):
@@ -57,7 +57,7 @@ class BSOptimization:
         self.optimizing_feature = optimizing_feature
         self.utils = Utils()
         self.img_size = renderer_kwargs["img_size"]
-        self.clip2mesh_mapper, self.labels = self.utils.get_model_to_eval(model_path=model_path)
+        self.semantify_mapper, self.labels = self.utils.get_model_to_eval(model_path=model_path)
 
         self.model = Model(len(self.labels))
         self.model.to(device)
@@ -186,7 +186,9 @@ class BSOptimization:
             self.logger.info(f"Optimizing {img_path.name}")
             bs_json_path = img_path.parent / f"{img_path.stem}.json"
 
-            if (self.output_dir / f"{img_path.stem}.mp4").exists() or (self.output_dir / f"{img_path.stem}.png").exists():
+            if (self.output_dir / f"{img_path.stem}.mp4").exists() or (
+                self.output_dir / f"{img_path.stem}.png"
+            ).exists():
                 self.logger.info(f"Video for {img_path.name} already exists")
                 continue
 
@@ -201,7 +203,7 @@ class BSOptimization:
             for step in progress_bar:
 
                 self.optimizer.zero_grad()
-                pred = self.clip2mesh_mapper(self.model().to(self.device))
+                pred = self.semantify_mapper(self.model().to(self.device))
                 loss = self.loss(pred, gt)
                 loss.backward()
                 self.optimizer.step()

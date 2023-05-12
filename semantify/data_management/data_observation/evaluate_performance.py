@@ -11,7 +11,7 @@ from pathlib import Path
 from tqdm import tqdm
 from omegaconf import DictConfig
 from typing import Literal, List
-from clip2mesh.utils import Utils, ModelsFactory
+from semantify.utils import Utils, ModelsFactory
 
 
 class EvaluatePerformance:

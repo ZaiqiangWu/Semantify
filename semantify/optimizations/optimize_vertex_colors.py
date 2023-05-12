@@ -7,8 +7,8 @@ from tqdm import tqdm
 from typing import Tuple
 from pytorch3d.ops import SubdivideMeshes
 from pytorch3d.io import load_objs_as_meshes
-from clip2mesh.utils import Pytorch3dRenderer
-from clip2mesh.optimization.optimization import CLIPLoss
+from semantify.utils import Pytorch3dRenderer
+from semantify.optimization.optimization import CLIPLoss
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 

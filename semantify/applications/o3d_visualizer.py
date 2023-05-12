@@ -1,5 +1,5 @@
 import argparse
-from clip2mesh.utils import ModelsFactory
+from semantify.utils import ModelsFactory
 
 
 def main(args):

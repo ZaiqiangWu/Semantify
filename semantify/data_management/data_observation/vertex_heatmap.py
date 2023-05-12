@@ -12,7 +12,7 @@ from pathlib import Path
 from omegaconf import DictConfig
 from itertools import combinations
 from typing import List, Literal, Tuple
-from clip2mesh.utils import Utils, Pytorch3dRenderer, ModelsFactory
+from semantify.utils import Utils, Pytorch3dRenderer, ModelsFactory
 
 
 class VertexHeatmap:

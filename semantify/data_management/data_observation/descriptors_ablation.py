@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 from omegaconf import DictConfig
 from typing import List, Literal
-from clip2mesh.optimizations.train_mapper import train
-from clip2mesh.data_management.data_observation.evaluate_performance import EvaluatePerformance
-from clip2mesh.data_management.data_observation.choosing_descriptors import ChoosingDescriptors
+from semantify.optimizations.train_mapper import train
+from semantify.data_management.data_observation.evaluate_performance import EvaluatePerformance
+from semantify.data_management.data_observation.choosing_descriptors import ChoosingDescriptors
 
 
 class DescriptorsAblation:

@@ -5,7 +5,7 @@ from typing import Dict, List
 from torch.utils.data import Dataset
 
 
-class CLIP2MESHDataset(Dataset):
+class semantifyDataset(Dataset):
     def __init__(self, data_dir: str, optimize_features: List[str], labels_to_get: List[str], out_features: int = 10):
 
         self.data_dir = data_dir

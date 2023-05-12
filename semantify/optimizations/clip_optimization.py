@@ -12,7 +12,7 @@ from omegaconf import DictConfig
 from typing import Tuple, Literal, List
 from pytorch_lightning import seed_everything
 from torchvision.transforms import Resize, Compose, RandomResizedCrop, Normalize
-from clip2mesh.utils import ModelsFactory, Pytorch3dRenderer, Utils
+from semantify.utils import ModelsFactory, Pytorch3dRenderer, Utils
 
 seed_everything(42)
 

@@ -11,8 +11,8 @@ from PIL import ImageTk, Image
 from pytorch3d.io import save_obj
 from omegaconf import DictConfig, OmegaConf
 from typing import Dict, Any, Literal, List, Union
-from clip2mesh.SPIN.spin_model import hmr, process_image
-from clip2mesh.utils import Utils, ModelsFactory, append_to_root_dir, get_model_abs_path
+from semantify.SPIN.spin_model import hmr, process_image
+from semantify.utils import Utils, ModelsFactory, append_to_root_dir, get_model_abs_path
 
 OmegaConf.register_new_resolver("get_model_abs_path", get_model_abs_path)
 

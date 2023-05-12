@@ -2,7 +2,7 @@ import json
 import argparse
 import logging
 from pathlib import Path
-from clip2mesh.utils import Utils
+from semantify.utils import Utils
 
 
 def main(args):

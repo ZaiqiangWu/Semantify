@@ -3,7 +3,7 @@ from tqdm import tqdm
 from pathlib import Path
 from omegaconf import DictConfig
 from typing import Union, Literal
-from clip2mesh.utils import Utils, ModelsFactory, Pytorch3dRenderer, Open3dRenderer, VertsIdx
+from semantify.utils import Utils, ModelsFactory, Pytorch3dRenderer, Open3dRenderer, VertsIdx
 
 
 class DataCreator:

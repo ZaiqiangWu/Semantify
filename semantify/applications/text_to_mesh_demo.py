@@ -5,7 +5,7 @@ import numpy as np
 from pathlib import Path
 from typing import Union, Dict, Tuple
 from sentence_transformers import SentenceTransformer, util
-from clip2mesh.utils import Utils, ModelsFactory
+from semantify.utils import Utils, ModelsFactory
 
 
 class Text2MeshApp:

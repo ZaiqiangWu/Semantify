@@ -1,0 +1,6 @@
+README.md
+setup.py
+semantify.egg-info/PKG-INFO
+semantify.egg-info/SOURCES.txt
+semantify.egg-info/dependency_links.txt
+semantify.egg-info/top_level.txt

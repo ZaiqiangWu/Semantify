@@ -10,7 +10,7 @@ from omegaconf import DictConfig
 from torch.nn import functional as F
 from pytorch3d.structures import Meshes
 from typing import Dict, Tuple, Literal
-from clip2mesh.comparisons.comparison_utils import ComparisonUtils
+from semantify.comparisons.comparison_utils import ComparisonUtils
 
 
 class NeuralBodyComparison(ComparisonUtils):

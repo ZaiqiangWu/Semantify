@@ -8,7 +8,7 @@ from pathlib import Path
 from pytorch3d.structures import Meshes
 from pytorch3d.loss import chamfer_distance
 from typing import Dict, Tuple, Literal, List
-from clip2mesh.utils import Image2ShapeUtils, Utils
+from semantify.utils import Image2ShapeUtils, Utils
 
 
 class ComparisonUtils(Image2ShapeUtils):

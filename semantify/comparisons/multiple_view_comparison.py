@@ -6,7 +6,7 @@ from tqdm import tqdm
 from pathlib import Path
 from omegaconf import DictConfig
 from typing import Dict, Union, Any, Tuple
-from clip2mesh.utils import Pytorch3dRenderer, Utils
+from semantify.utils import Pytorch3dRenderer, Utils
 
 
 class MultiViewCompare:

@@ -13,7 +13,7 @@ from pytorch3d.structures import Meshes
 from typing import Dict, Tuple, Literal
 from pytorch3d.loss import chamfer_distance
 from pytorch3d.io import load_objs_as_meshes
-from clip2mesh.utils import Image2ShapeUtils, Utils
+from semantify.utils import Image2ShapeUtils, Utils
 
 
 class HBWComparison(Image2ShapeUtils):

@@ -5,7 +5,7 @@ import hydra
 import numpy as np
 from pathlib import Path
 from typing import Dict, Union, Tuple, Any
-from clip2mesh.utils import Utils, ModelsFactory
+from semantify.utils import Utils, ModelsFactory
 
 
 class SlidersApp:

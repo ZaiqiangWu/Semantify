@@ -11,6 +11,7 @@ from PIL import ImageTk, Image
 from pytorch3d.io import save_obj
 from omegaconf import DictConfig, OmegaConf
 from typing import Dict, Any, Literal, List, Union
+import semantify
 from semantify.SPIN.spin_model import hmr, process_image
 from semantify.utils import Utils, ModelsFactory, append_to_root_dir, get_model_abs_path
 
